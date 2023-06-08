@@ -2,6 +2,8 @@
 
 student=$1
 
+sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
+
 apt update
 apt --assume-yes install apt
 apt --assume-yes install python3-pip
