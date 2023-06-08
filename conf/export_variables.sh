@@ -1,5 +1,6 @@
 #!/bin/bash
 
+student=$1
 SPARK_HOME=/home/$student/spark-3.3.2-bin-hadoop3
 
 echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.bashrc
