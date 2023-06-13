@@ -10,4 +10,4 @@
 
 ## Run using:
 * nohup jupyter notebook
-* access it in the web browser on the port 8888
+* access it in the web browser on the port 8080

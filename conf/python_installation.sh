@@ -5,6 +5,7 @@ student=$1
 sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
 
 apt update
+apt --assume-yes install tmux
 apt --assume-yes install apt
 apt --assume-yes install python3-pip
 apt --assume-yes install openjdk-8-jdk
@@ -21,3 +22,5 @@ tar xvf spark-3.3.2-bin-hadoop3.tgz
 
 mkdir /home/ubuntu/.jupyter
 cp /home/$student/spark-workshop/conf/jupyter_notebook_config.py /home/$student/.jupyter/
+
+chown -R ubuntu:ubuntu /home/ubuntu/.jupyter
